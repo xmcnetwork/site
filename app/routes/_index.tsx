@@ -3,13 +3,18 @@ import { Link } from "@remix-run/react";
 import { screenshots } from "~/images";
 
 export const meta: MetaFunction = () => {
+  const description =
+    "XMC is a small, whitelist-enabled, vanilla-compatible Minecraft server.";
   return [
     { title: "XMC" },
     { property: "og:title", content: "XMC" },
     {
       name: "description",
-      content:
-        "XMC is a small, whitelist-enabled, vanilla-compatible Minecraft server.",
+      content: description,
+    },
+    {
+      property: "og:description",
+      content: description,
     },
     {
       property: "og:image",
