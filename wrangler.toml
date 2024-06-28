@@ -1,9 +1,12 @@
-name = "remix-cloudflare-workers-template"
+name = "xmc-site"
 
 main = "./server.js"
 workers_dev = true
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2023-04-20"
+
+[vars]
+DISCORD_INVITE_CODE = "Dw2Ue45"
 
 [site]
 bucket = "./build/client"
